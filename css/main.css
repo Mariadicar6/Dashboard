@@ -9,8 +9,7 @@ body {
     body .box .box-white {
       background-color: #fff;
       color: #000;
-      padding: 25px 15px;
-      margin: 10px 0px; }
+      padding: 25px 15px; }
       body .box .box-white .form-control {
         border-radius: 0px;
         border-top: none;
@@ -24,7 +23,7 @@ body {
         background-color: #42A5F5;
         color: #fff; }
       body .box .box-white .btn-default:hover {
-        background-color: #42A5F0;
+        background-color: #4287F6;
         color: #fff; }
 
 .mg-2 {
@@ -36,5 +35,13 @@ a {
 
 a:hover {
   color: #fff; }
+
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+  /* alineacion horizontal */
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */

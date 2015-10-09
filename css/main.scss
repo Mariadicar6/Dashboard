@@ -1,5 +1,5 @@
 $turquesa: #42A5F5;
-$turquesa-hover: #42A5F0;
+$turquesa-hover: #4287F6;
 $azul-oscuro: #35384C;
 
 body{
@@ -16,7 +16,6 @@ body{
 			background-color: #fff;
 			color: #000;
 			padding: 25px 15px;
-			margin: 10px 0px;
 			
 			.form-control{
 				border-radius: 0px;
@@ -55,4 +54,13 @@ a{
 
 a:hover{
 	color:#fff;
+}
+
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+   /* alineacion horizontal */
+  justify-content: center;
 }
