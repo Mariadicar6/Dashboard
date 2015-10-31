@@ -100,17 +100,21 @@
   <div class="container-fluid main-nav clearfix">
     <div class="nav-collapse">
       <ul class="nav">
-        <li class="dashboard" ><a href="index.html"><span></span>Home </a></li>
-        <li class="dropdown ui"><a data-toggle="dropdown" href="#"><span></span> Modulos <b class="caret"></b></a>
+        <li class="dashboard" ><a href="index.html"><span></span>Inicio </a></li>
+        <li class="dropdown ui"><a data-toggle="dropdown"  class="current"  href="#"><span></span> Cliente <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="buttons.html">Modulos</a></li>
-            <li><a href="icons.html">Inventario</a></li>
-            <li><a href="components.html">Reportes</a></li>
-            <li><a href="widgets-2.html">Configuracion</a></li>
+            <li><a href="cliente-registro.html" >Nuevo</a></li>
+            <li><a href="cliente.html" class="current">Listar</a></li>
+          </ul>
+        </li>
+        <li class="forms ui"><a data-toggle="dropdown" href="#"><span></span> Proveedor <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="proveedor-registro.html">Nuevo</a></li>
+            <li><a href="proveedor.html">Listar</a></li>
           </ul>
         </li>
         <li class="forms"><a href="forms.html"><span></span> Inventario </a></li>
-        <li class="tables"><a class="current" href="tables.html"><span></span> Reportes </a></li>
+        <li class="tables"><a href="tables.html"><span></span> Reportes </a></li>
         <li class="settings"><a href="charts.html"><span></span> Configuracion </a></li>
       </ul>
     </div>
@@ -118,31 +122,7 @@
 </div>
 <div class="container-fluid">
   <div class="page-title">
-    <h1>Proveedor</h1>
-  </div>
-  <div class="row">
-    <div class="form-group">
-      <div class="col-lg-1">
-        <h4>Proveedor</h4>
-      </div>
-      <div class="col-lg-4">
-        <input class="form-control" placeholder="Texto a buscar" type="text"/>
-      </div>
-    </div>
-    <div class="col-lg-1">
-      <button class="btn btn-primary">Buscar</button>
-    </div>
-    <div class="form-group">
-      <div class="col-lg-1">
-        <h4>Producto</h4>
-      </div>
-      <div class="col-lg-4">
-        <input class="form-control" placeholder="Texto a buscar" type="text"/>
-      </div>
-    </div>
-    <div class="col-lg-1">
-      <button class="btn btn-primary">Buscar</button>
-    </div>
+    <h1> Cliente </h1>
   </div>
   <div class="row">
     <div class="form-group">
@@ -162,7 +142,7 @@
       <button class="btn btn-primary">Buscar</button>
     </div>
   </div>
- 
+
   <div class="row">
     <div class="col-lg-12">
       <div class="widget-container fluid-height clearfix">
@@ -310,5 +290,7 @@
       </div>
     </div>
   </div>
+
+</div>
 </body>
 </html>
