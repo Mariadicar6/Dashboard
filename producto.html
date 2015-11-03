@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>se7en - Dashboard</title>
+<title>Dashboard</title>
 <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" media="all" rel="stylesheet"/>
 <link href="stylesheets/application.css" media="all" rel="stylesheet"/>
 <link href="stylesheets/isotope.css" media="all" rel="stylesheet"/>
@@ -101,16 +101,23 @@
     <div class="nav-collapse">
       <ul class="nav">
         <li class="dashboard" ><a href="index.html"><span></span>Inicio </a></li>
-        <li class="dropdown ui"><a data-toggle="dropdown"  class="current"  href="#"><span></span> Cliente <b class="caret"></b></a>
+        <li class="dropdown ui"><a data-toggle="dropdown" href="#"><span></span> Cliente <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="cliente-registro.html" >Nuevo</a></li>
-            <li><a href="cliente.html" class="current">Listar</a></li>
+            <li><a href="cliente-registro-n.html" >Nuevo cliente natural</a></li>
+            <li><a href="cliente-registro-j.html" >Nuevo cliente juridco</a></li>
+            <li><a href="cliente.html"  class="current">Listar</a></li>
           </ul>
         </li>
         <li class="forms ui"><a data-toggle="dropdown" href="#"><span></span> Proveedor <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="proveedor-registro.html">Nuevo</a></li>
             <li><a href="proveedor.html">Listar</a></li>
+          </ul>
+        </li>
+        <li class="forms ui"><a data-toggle="dropdown" class="current" href="#"><span></span> Producto <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="producto-registro.html">Nuevo</a></li>
+            <li><a href="producto.html" class="current" >Listar</a></li>
           </ul>
         </li>
         <li class="forms"><a href="forms.html"><span></span> Inventario </a></li>
@@ -122,16 +129,15 @@
 </div>
 <div class="container-fluid">
   <div class="page-title">
-    <h1> Cliente </h1>
+    <h1> Producto </h1>
   </div>
   <div class="row">
     <div class="form-group">
       <div class="col-lg-6">
         <select class="form-control">
           <option value="Category 1">Buscar por nombre</option>
-          <option value="Category 2">DNI</option>
-          <option value="Category 3">Option 3</option>
-          <option value="Category 4">Option 4</option>
+          <option value="Category 2">Buscar por código</option>
+          <option value="Category 3">Buscar por estado</option>
         </select>
       </div>
       <div class="col-lg-5">
@@ -150,11 +156,11 @@
           <table class="table table-bordered table-striped" id="dataTable1">
             <thead>
             <th class="check-header hidden-xs"></th>
-              <th> First Name </th>
-              <th> Last Name </th>
-              <th class="hidden-xs"> Email </th>
-              <th class="hidden-xs"> Date Added </th>
-              <th class="hidden-xs"> Status </th>
+              <th> Nombre </th>
+              <th> Categoría </th>
+              <th class="hidden-xs"> Color </th>
+              <th class="hidden-xs"> Talla </th>
+              <th class="hidden-xs"> Estado </th>
               <th></th>
               </thead>
             <tbody>

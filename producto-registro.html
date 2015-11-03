@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>se7en - Dashboard</title>
+<title>Dashboard</title>
 <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" media="all" rel="stylesheet"/>
 <link href="stylesheets/application.css" media="all" rel="stylesheet"/>
 <link href="stylesheets/isotope.css" media="all" rel="stylesheet"/>
@@ -101,16 +101,23 @@
     <div class="nav-collapse">
       <ul class="nav">
         <li class="dashboard" ><a href="index.html"><span></span>Inicio </a></li>
-        <li class="dropdown ui"><a data-toggle="dropdown"  class="current"  href="#"><span></span> Cliente <b class="caret"></b></a>
+        <li class="dropdown ui"><a data-toggle="dropdown" href="#"><span></span> Cliente <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="cliente-registro.html"  class="current" >Nuevo</a></li>
-            <li><a href="cliente.html">Listar</a></li>
+            <li><a href="cliente-registro-n.html" >Nuevo cliente natural</a></li>
+            <li><a href="cliente-registro-j.html" >Nuevo cliente juridco</a></li>
+            <li><a href="cliente.html"  class="current">Listar</a></li>
           </ul>
         </li>
         <li class="forms ui"><a data-toggle="dropdown" href="#"><span></span> Proveedor <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="proveedor-registro.html">Nuevo</a></li>
             <li><a href="proveedor.html">Listar</a></li>
+          </ul>
+        </li>
+        <li class="forms ui"><a data-toggle="dropdown" class="current" href="#"><span></span> Producto <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="producto-registro.html" class="current" >Nuevo</a></li>
+            <li><a href="producto.html">Listar</a></li>
           </ul>
         </li>
         <li class="forms"><a href="forms.html"><span></span> Inventario </a></li>
@@ -122,7 +129,7 @@
 </div>
 <div class="container-fluid">
   <div class="page-title">
-    <h1>Nuevo cliente </h1>
+    <h1>Nuevo producto </h1>
   </div>
   <div class="row">
     <div class="col-lg-12">
@@ -137,35 +144,49 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label col-lg-3">Apellido paterno</label>
-                <div class="col-lg-9">
-                  <input class="form-control" placeholder="" type="text"/>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-lg-3">Apellido materno</label>
-                <div class="col-lg-9">
-                  <input class="form-control" placeholder="" type="text"/>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-lg-3">Documento de identidad</label>
+                <label class="control-label col-lg-3">Categoria</label>
                 <div class="col-lg-9">
                   <select class="form-control">
-                    <option value="Category 1">DNI</option>
-                    <option value="Category 2">Carnet de extranjería</option>
+                    <option value="Category 1">Polo</option>
+                    <option value="Category 2">Camisa</option>
+                    <option value="Category 2">Blusa</option>
                   </select>
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label col-lg-3">Número de documento de identidad</label>
+                <label class="control-label col-lg-3">Color</label>
                 <div class="col-lg-9">
-                  <input class="form-control" placeholder="Text" type="text"/>
+                  <select class="form-control">
+                    <option value="Category 1">Rojo</option>
+                    <option value="Category 2">Blanco</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-lg-3">Talla</label>
+                <div class="col-lg-9">
+                  <select class="form-control">
+                    <option value="Category 1">S</option>
+                    <option value="Category 2">M</option>
+                    <option value="Category 2">L</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-lg-3">Costo</label>
+                <div class="col-lg-9">
+                  <input class="form-control" placeholder="" type="text"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-lg-3">Precio</label>
+                <div class="col-lg-9">
+                  <input class="form-control" placeholder="" type="text"/>
                 </div>
               </div>
               <div class="form-actions col-lg-offset-3 col-lg-9">
-                <button class="btn btn-primary" type="submit">Submit</button>
-                <button class="btn btn-default-outline">Cancel</button>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-default-outline">Cancelar</button>
               </div>
             </form>
           </div>
