@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" media="all" rel="stylesheet"/>
+<link href="stylesheets/application.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/isotope.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/normalize.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/fullcalendar.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/datatables.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/prettify.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/classyscroll.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/jquery.fancybox.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/select2.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/bootstrap.min.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/fontawesome.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/style.css" media="all" rel="stylesheet"/>
+<link href="stylesheets/color/green.css" media="all" rel="alternate stylesheet" title="green-theme"/>
+<link href="stylesheets/color/orange.css" media="all" rel="alternate stylesheet" title="orange-theme"/>
+<link href="stylesheets/color/magenta.css" media="all" rel="alternate stylesheet" title="magenta-theme"/>
+<link href="stylesheets/color/gray.css" media="all" rel="alternate stylesheet" title="gray-theme"/>
+<link href="stylesheets/main.css" media="all" rel="stylesheet" />
+<script src="javascripts/modernizr.custom.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/jquery.mousewheel.js"></script>
+<script src="javascripts/jquery.classyscroll.js"></script>
+<script src="javascripts/jquery.vmap.min.js"></script>
+<script src="javascripts/jquery.vmap.sampledata.js"></script>
+<script src="javascripts/jquery.vmap.world.js"></script>
+<script src="javascripts/fullcalendar.min.js"></script>
+<script src="javascripts/gcal.js"></script>
+<script src="javascripts/prettify.js"></script>
+<script src="javascripts/jquery.dataTables.min.js"></script>
+<script src="javascripts/jquery.fancybox.pack.js"></script>
+<script src="javascripts/jquery.sparkline.min.js"></script>
+<script src="javascripts/jquery.easy-pie-chart.js"></script>
+<script src="javascripts/excanvas.min.js"></script>
+<script src="javascripts/jquery.isotope.min.js"></script>
+<script src="javascripts/select2.js"></script>
+<script src="javascripts/styleswitcher.js"></script>
+<script src="javascripts/main.js"></script>
+<meta content="width=device-width, initial-scale=1.0" charset="utf-8" name="viewport"/>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="container-fluid top-bar">
+    <div class="pull-right">
+      <ul class="nav navbar-nav pull-right">
+        <li class="dropdown notifications hidden-xs"><a class="dropdown-toggle" data-toggle="dropdown" href="widgets.html#"><span>Notifications</span>
+          <p class="counter"> 4 </p>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">
+              <div class="notifications label label-info"> New </div>
+              New user added: Jane Smith </a></li>
+            <li><a href="#">
+              <div class="notifications label label-info"> New </div>
+              Sales targets available </a></li>
+            <li><a href="#">
+              <div class="notifications label label-info"> New </div>
+              New performance metric added </a></li>
+            <li><a href="#">
+              <div class="notifications label label-info"> New </div>
+              New growth data available </a></li>
+          </ul>
+        </li>
+        <li class="dropdown messages hidden-xs"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Messages</span>
+          <p class="counter">3</p>
+          </a>
+          <ul class="dropdown-menu messages">
+            <li><a href="#"><img alt="Avatar male2" height="34" src="images/avatar-male2.png" width="34"/> Could we meet today? I wanted... </a></li>
+            <li><a href="#"><img alt="Avatar female" height="34" src="images/avatar-female.png" width="34"/> Important data needs your analysis... </a></li>
+            <li><a href="#"><img alt="Avatar male2" height="34" src="images/avatar-male2.png" width="34"/> Buy Se7en today, it's a great theme... </a></li>
+          </ul>
+        </li>
+        <li class="dropdown settings hidden-xs"><a class="dropdown-toggle" data-toggle="dropdown" href="widgets.html#"><span>Settings</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="settings-link blue" href="javascript:chooseStyle('none', 30)"><span></span> Blue </a></li>
+            <li><a class="settings-link green" href="javascript:chooseStyle('green-theme', 30)"><span></span> Green </a></li>
+            <li><a class="settings-link orange" href="javascript:chooseStyle('orange-theme', 30)"><span></span> Orange </a></li>
+            <li><a class="settings-link magenta" href="javascript:chooseStyle('magenta-theme', 30)"><span></span> Magenta </a></li>
+            <li><a class="settings-link gray" href="javascript:chooseStyle('gray-theme', 30)"><span></span> Gray </a></li>
+          </ul>
+        </li>
+        <li class="dropdown user hidden-xs"><a class="dropdown-toggle" data-toggle="dropdown" href="widgets.html#"><img alt="Avatar male" height="34" src="images/avatar-male.jpg" width="34"/> John Smith <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="widgets.html#"><i class="icon-user"></i> My Account </a></li>
+            <li><a href="widgets.html#"><i class="icon-gear"></i> Account Settings </a></li>
+            <li><a href="index.html"><i class="icon-signout"></i> Logout </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    <a class="logo" href="index.html">se7en</a>
+
+  </div>
+  <div class="container-fluid main-nav clearfix">
+    <div class="nav-collapse">
+      <ul class="nav">
+        <li class="dashboard" ><a href="index.html"><span></span>Inicio </a></li>
+        <li class="dropdown ui"><a data-toggle="dropdown"  class="current"  href="#"><span></span> Cliente <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="cliente-registro-n.html" >Nuevo cliente natural</a></li>
+            <li><a href="cliente-registro-j.html" >Nuevo cliente juridco</a></li>
+            <li><a href="cliente.html"  class="current">Listar</a></li>
+          </ul>
+        </li>
+        <li class="forms ui"><a data-toggle="dropdown" href="#"><span></span> Proveedor <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="proveedor-registro.html">Nuevo</a></li>
+            <li><a href="proveedor.html">Listar</a></li>
+          </ul>
+        </li>
+        <li class="forms ui"><a data-toggle="dropdown" href="#"><span></span> Producto <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="producto-registro.html">Nuevo</a></li>
+            <li><a href="producto.html" >Listar</a></li>
+          </ul>
+        </li>
+        <li class="forms"><a href="forms.html"><span></span> Inventario </a></li>
+        <li class="tables"><a href="tables.html"><span></span> Reportes </a></li>
+        <li class="settings"><a href="charts.html"><span></span> Configuracion </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="page-title">
+    <h1> Venta </h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Cliente</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <input class="form-control" placeholder="DNI cliente" type="text"/>
+    </div>
+    <div class="col-lg-4">
+      <p>Registrar cliente: <a href="cliente-registro-j.html"> Juridico </a>/
+      <a href="cliente-registro-n.html"> Natural</a> </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Productos</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="row">
+        <div class="col-lg-10">
+          <input class="form-control" placeholder="Texto a buscar" type="text"/>
+        </div>
+        <div class="col-lg-2">
+          <button class="pull-right btn btn-primary">Buscar</button>
+        </div>
+      </div>
+      <div class="widget-container fluid-height clearfix">
+        <div class="widget-content padded clearfix">
+          <table class="table table-bordered">
+            <thead>
+              <th class="check-header"></th>
+              <th> Cantidad </th>
+              <th> Código </th>
+              <th> Descripción </th>
+              <th> Precio </th>
+              </thead>
+            <tbody>
+              <tr>
+                <td class="check"><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td>
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </td>
+                <td>9df9e</td>
+                <td> <a href="" data-toggle="modal" data-target="#myModal">Leche Gloria Light 400gr</a></td>
+                <td>S/ 3.00 </td>               
+              </tr>
+              <tr>
+                <td class="check"><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td>
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </td>
+                <td>9df9e</td>
+                <td>Leche Gloria Light 400gr </td>
+                <td>S/ 3.00 </td>               
+              </tr>
+              <tr>
+                <td class="check"><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td>
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </td>
+                <td>9df9e</td>
+                <td>Leche Gloria Light 400gr </td>
+                <td>S/ 3.00 </td>               
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="pull-right btn btn-primary">Añadir</button>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="widget-container fluid-height clearfix">
+        <div class="widget-content padded clearfix">
+          <table class="table table-bordered table-striped" id="dataTable1">
+            <thead>
+            <th class="check-header hidden-xs"></th>
+              <th> Cant. </th>
+              <th> Descripción </th>
+              <th> P. Unit </th>
+              <th> Importe </th>              
+              <th> </th>
+              </thead>
+            <tbody>
+              <tr>
+                <td><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td> 2 </td>
+                <td> Leche Gloria Light 400gr </td>
+                <td> 3.00 </td>
+                <td> 6.00 </td>                
+                <td class="actions text-center"><div class="action-buttons"><a class="table-actions" href="tables-2.html"><i class="icon-pencil"></i></a><a class="table-actions" href="tables-2.html"><i class="icon-trash"></i></a></div></td>
+              </tr>
+              <tr>
+                <td><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td> 2 </td>
+                <td> Leche Gloria Light 400gr </td>
+                <td> 3.00 </td>
+                <td> 6.00 </td>                
+                <td class="actions text-center"><div class="action-buttons"><a class="table-actions" href="tables-2.html"><i class="icon-pencil"></i></a><a class="table-actions" href="tables-2.html"><i class="icon-trash"></i></a></div></td>
+              </tr>
+              <tr>
+                <td><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td> 2 </td>
+                <td> Leche Gloria Light 400gr </td>
+                <td> 3.00 </td>
+                <td> 6.00 </td>                
+                <td class="actions text-center"><div class="action-buttons"><a class="table-actions" href="tables-2.html"><i class="icon-pencil"></i></a><a class="table-actions" href="tables-2.html"><i class="icon-trash"></i></a></div></td>
+              </tr>
+              <tr>
+                <td><input name="optionsRadios1" type="checkbox" value="option1"/></td>
+                <td> 2 </td>
+                <td> Leche Gloria Light 400gr </td>
+                <td> 3.00 </td>
+                <td> 6.00 </td>                
+                <td class="actions text-center"><div class="action-buttons"><a class="table-actions" href="tables-2.html"><i class="icon-pencil"></i></a><a class="table-actions" href="tables-2.html"><i class="icon-trash"></i></a></div></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>TOTAL:</td>
+                <td>S/. 24.00</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="pull-right">Total: 24.00</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Detalle producto</h4>
+      </div>
+      <div class="modal-body text-center">
+        <h3>Leche Gloria Light 400gr</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Costo: S/ 2.6</h3>
+          </div>
+          <div class="col-sm-6">
+            <h3>Precio: S/ 3.0</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Info 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptate quos dolore illum ipsum. Voluptates a eum ducimus sint dolorem distinctio explicabo blanditiis harum perferendis ea nam sapiente, non libero!</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</body>
+</html>
