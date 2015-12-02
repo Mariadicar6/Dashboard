@@ -44,4 +44,11 @@ a:hover {
   /* alineacion horizontal */
   justify-content: center; }
 
+
+  .marco{
+    border-right: 2px solid black;
+  }
+
 /*# sourceMappingURL=main.css.map */
+
+
